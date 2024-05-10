@@ -23,7 +23,7 @@ source venv/bin/activate
 pip3 install meraki python-dotenv
 ```
 ## Setup
-Create .env file including the API_KEY and ORG_ID.
+Create _.env_ file including the API_KEY and ORG_ID.
 ```
 API_KEY=""
 ORG_ID=""
@@ -66,7 +66,7 @@ For example, let's say I want to change the configuration to the following.
 
 Then, I would alter the row for _Office - Sydney_ and add the primary and secondary hub configuration in _input.csv_.
 
-Note that editting the file via Microsoft Excel could change unwanted rows. For example, I noticed that 'False' was changed to 'False'.
+Note that editting the file via Microsoft Excel could change unwanted rows. For example, I noticed that 'False' was changed to 'FALSE'.
 
 ### 4. Run _update_auto_vpn_hub_priority.py_
 ```
