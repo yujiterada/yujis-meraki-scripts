@@ -49,4 +49,33 @@ This will create the file _output.csv_ which has the Auto VPN configuration of e
 - Tertiary use default route
 - Quaternary Hub ID
 - Quaternary use default route
-### 2. Edit _output.csv_
+
+There's a sample in this repository.
+### 2. Copy _output.csv_ and rename to _input.csv_
+```
+cp output.csv input.csv
+```
+### 3. Edit _input.csv_
+Edit _input.csv_ to your preferred configuration. There's a sample in this repository.
+
+For example, let's say I want to change the configuration to the following.
+
+| Network ID (Hub ID) | Network name | Primary hub ID | Primary hub useDefaultRoute | Secondary hub ID | Secondary hub useDefaultRoute |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| L_669347494617955075 | Office - Sydney | L_726205439913497716  | False | N_726205439913511178 | False |
+
+Then, I would alter the row for _Office - Sydney_ and add the primary and secondary hub configuration in _input.csv_.
+
+Note that editting the file via Microsoft Excel could change unwanted rows. For example, I noticed that 'False' was changed to 'False'.
+
+### 4. Run _update_auto_vpn_hub_priority.py_
+```
+python3 update_auto_vpn_hub_priority.py
+```
+This will create update.log to record the changes.
+
+### 5. If you need to rollback, run rollback_auto_vpn_hub_priority.py_
+```
+python3 rollback_auto_vpn_hub_priority.py
+```
+This will create update.log to record the changes.
