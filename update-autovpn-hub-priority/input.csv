@@ -1,0 +1,8 @@
+network_id/hub_id,network_name,mode,primary hub_id,primary useDefaultRoute,secondary hub_id,secondary useDefaultRoute,tertiary hub_id,tertiary useDefaultRoute,quaternary hub_id,quaternary useDefaultRoute
+L_669347494617948186,Home - New York,hub,,,,,,,,
+L_669347494617955075,Office - Sydney,spoke,L_726205439913497716,false,N_726205439913511178,false,,,,
+L_726205439913494157,Home - London,hub,,,,,,,,
+L_726205439913496800,Home - Sydney,spoke,L_726205439913497716,False,,,,,,,,
+L_726205439913497679,Home - Nagoya,spoke,L_726205439913497716,False,,,,,,
+L_726205439913497716,Home - Tokyo,hub,,,,,,,,
+N_726205439913511178,AWS,hub,,,,,,,,
