@@ -42,7 +42,7 @@ MERAKI_DASHBOARD_API_KEY=XXX
 AWS_ACCESS_KEY_ID=AAA
 AWS_SECRET_ACCESS_KEY=BBB
 ```
-### 6. Edit ./terraform-vmx-basic/terraform.tfvars
+### 5. Edit ./terraform-vmx-basic/terraform.tfvars
 
 Edit to your preference. View _./terraform-vmx-basic/variables.tf_ for definition of the variables. The Meraki organization ID can be found in the footer of Meraki Dashboard.
 
