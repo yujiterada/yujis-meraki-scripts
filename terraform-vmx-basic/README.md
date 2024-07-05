@@ -368,7 +368,7 @@ vmx_token = "8ec815670bd7aed2e7ae9bb0e920b468/fe5eb03bc4f5c0809058825c2e65547b4d
 ```
 ### 3. Manually configure _Local networks_ for vMX
 
-Go to _Security & SD-WAN > Site-to-site VPN > Local networks to advertise routes from vMX to other MXs.
+Go to _Security & SD-WAN > Site-to-site VPN > Local networks_ to configure advertised routes from vMX to other MXs.
 
 As of Jul 5 2024, an **API endpoint to configure this configuration doesn't exist** (it works for NAT mode MXs), and therefore, doesn't exist in Terraform as well.
 
