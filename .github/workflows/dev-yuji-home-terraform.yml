@@ -7,6 +7,7 @@ on:
     paths:
       - 'terraform-meraki-config/modules/**'  # Trigger on changes to the shared module
       - 'terraform-meraki-config/prod/**'     # Trigger on changes to prod environments
+  workflow_dispatch:
 
 jobs:
   get-networks:
