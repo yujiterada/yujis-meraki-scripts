@@ -1,4 +1,4 @@
-name: Terraform plan CI/CD
+name: dev-yuji-home terraform plan
 
 on:
   push:
