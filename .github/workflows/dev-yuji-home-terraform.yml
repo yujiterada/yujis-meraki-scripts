@@ -5,8 +5,8 @@ on:
     branches:
       - 'dev-yuji-home'
     paths:
-      - 'modules/**'  # Trigger on changes to the shared module
-      - 'prod/**'     # Trigger on changes to prod environments
+      - 'terraform-meraki-config/modules/**'  # Trigger on changes to the shared module
+      - 'terraform-meraki-config/prod/**'     # Trigger on changes to prod environments
 
 jobs:
   get-networks:
