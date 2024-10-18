@@ -3,7 +3,7 @@ name: main-yuji-home terraform apply
 on:
   push:
     branches:
-      - 'prod-yuji-home'
+      - 'main-yuji-home'
     paths:
       - 'terraform-meraki-config/modules/**'  # Trigger on changes to the shared module
       - 'terraform-meraki-config/prod/**'     # Trigger on changes to prod environments
