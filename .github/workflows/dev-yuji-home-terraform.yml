@@ -49,4 +49,4 @@ jobs:
     - name: Terraform Plan
       run: |
         cd terraform-meraki-config/prod/${{ matrix.network }}
-        terraform plan -out=tfplan
+        terraform plan -var="meraki_dashboard_api_key="${{ secrets.meraki_dashboard_api_key }} -out=tfplan
