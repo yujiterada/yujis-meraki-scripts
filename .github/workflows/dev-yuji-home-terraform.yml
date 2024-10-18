@@ -20,7 +20,7 @@ jobs:
     - name: Get all networks
       id: set-networks
       run: |
-        networks=$(ls -d prod/*/ | xargs -n 1 basename | jq -R -s -c 'split("\n")[:-1]')
+        networks=$(ls -d terraform-meraki-config/prod/*/ | xargs -n 1 basename | jq -R -s -c 'split("\n")[:-1]')
         echo "networks=$networks" >> $GITHUB_OUTPUT
   
   terraform:
@@ -42,10 +42,10 @@ jobs:
 
     - name: Terraform Init
       run: |
-        cd prod/${{ matrix.network }}
+        cd terraform-meraki-config/prod/${{ matrix.network }}
         terraform init
 
     - name: Terraform Plan
       run: |
-        cd prod/${{ matrix.network }}
+        cd terraform-meraki-config/${{ matrix.network }}
         terraform plan -out=tfplan
