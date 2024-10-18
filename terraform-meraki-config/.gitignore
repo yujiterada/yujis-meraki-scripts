@@ -35,8 +35,3 @@ override.tf.json
 # Ignore CLI configuration files
 .terraformrc
 terraform.rc
-
-# Custom ignore patterns
-# Ignore dev and prod folders
-dev/**
-prod/**
