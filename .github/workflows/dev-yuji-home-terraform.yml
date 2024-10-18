@@ -39,7 +39,7 @@ jobs:
     - name: Setup Terraform
       uses: hashicorp/setup-terraform@v1
       with:
-        terraform_version: 1.0.0  # Specify your Terraform version
+        terraform_version: 1.9.8  # Updated to a more recent version
 
     - name: Terraform Init
       run: |
