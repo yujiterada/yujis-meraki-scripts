@@ -48,5 +48,5 @@ jobs:
 
     - name: Terraform Plan
       run: |
-        cd terraform-meraki-config/${{ matrix.network }}
+        cd terraform-meraki-config/prod/${{ matrix.network }}
         terraform plan -out=tfplan
