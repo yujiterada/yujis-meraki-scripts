@@ -5,6 +5,9 @@ terraform {
       version = "0.2.12-alpha"
     }
   }
+
+  backend "s3" {
+  }
 }
 
 provider "meraki" {
