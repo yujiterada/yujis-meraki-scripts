@@ -7,7 +7,7 @@ terraform {
   }
 
   backend "s3" {
-    bucket         = "s3-yuji-meraki-scripts"
+    bucket         = "s3-yujis-meraki-scripts"
     key            = "state/terraform.tfstate"
     encrypt        = true
     region         = "ap-southeast-2"
