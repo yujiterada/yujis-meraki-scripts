@@ -7,6 +7,10 @@ terraform {
   }
 
   backend "s3" {
+    bucket         = "s3-yuji-meraki-scripts"
+    key            = "state/terraform.tfstate"
+    encrypt        = true
+    region         = "ap-southeast-2"
   }
 }
 
