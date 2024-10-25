@@ -5,6 +5,13 @@ terraform {
       version = "0.2.12-alpha"
     }
   }
+
+  backend "s3" {
+    bucket         = "s3-yujis-meraki-scripts"
+    key            = "state/terraform.tfstate"
+    encrypt        = true
+    region         = "ap-southeast-2"
+  }
 }
 
 provider "meraki" {
