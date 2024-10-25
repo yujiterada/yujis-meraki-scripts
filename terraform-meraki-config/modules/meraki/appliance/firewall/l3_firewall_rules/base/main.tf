@@ -3,11 +3,11 @@ resource "meraki_networks_appliance_firewall_l3_firewall_rules" "base" {
   rules = [{
     comment        = "Deny traffic to Cloudflare"
     dest_cidr      = "1.1.1.1/32"
-    dest_port      = "Any"
+    dest_port      = "any"
     policy         = "deny"
-    protocol       = "Any"
-    src_cidr       = "Any"
-    src_port       = "Any"
+    protocol       = "any"
+    src_cidr       = "any"
+    src_port       = "any"
     syslog_enabled = false
   }]
 }
